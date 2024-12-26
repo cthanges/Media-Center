@@ -69,7 +69,7 @@ void ADC_StopCnv (void) {
 uint16_t ADC_GetCnv (void) {
 
 #ifndef __ADC_IRQ
-  while (!(LPC_ADC->ADGDR & ( 1UL << 31)));  /* Wait for Conversion end       */
+  while (!(LPC_ADC->ADGDR & ( 1UL << 31)));        /* Wait for Conversion end */
   AD_last = (LPC_ADC->ADGDR >> 4) & ADC_VALUE_MAX; /* Store converted value   */
 
   AD_done = 1;
@@ -86,9 +86,9 @@ uint16_t ADC_GetCnv (void) {
 void ADC_IRQHandler(void) {
   volatile uint32_t adstat;
 
-  adstat = LPC_ADC->ADSTAT;		             /* Read ADC clears interrupt     */
+  adstat = LPC_ADC->ADSTAT;		                  /* Read ADC clears interrupt */
 
-  AD_last = (LPC_ADC->ADGDR >> 4) & ADC_VALUE_MAX; /* Store converted value   */
+  AD_last = (LPC_ADC->ADGDR >> 4) & ADC_VALUE_MAX;  /* Store converted value */
 
   AD_done = 1;
 }
