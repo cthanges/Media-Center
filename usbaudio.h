@@ -25,22 +25,22 @@
 #define B_S       (8*P_C*P_S)           /* Buffer Size */
 
 /* Push Button Definitions */
-// #define PBINT     0x00004000            /* P0.14 */
+// #define PBINT     0x00004000         /* P0.14 */
 
 /* LED Definitions */
 #define LEDMSK    0x000000FF            /* P2.0..7 */
 
 /* Audio Demo Variables */
-extern uint8_t  Mute;                      /* Mute State */
-extern uint32_t Volume;                    /* Volume Level */
-extern uint16_t  VolCur;                    /* Volume Current Value */
+extern uint8_t  Mute;                   /* Mute State */
+extern uint32_t Volume;                 /* Volume Level */
+extern uint16_t  VolCur;                /* Volume Current Value */
 #if !USB_DMA
-extern uint32_t InfoBuf[P_C];              /* Packet Info Buffer */
+extern uint32_t InfoBuf[P_C];           /* Packet Info Buffer */
 extern short DataBuf[B_S];              /* Data Buffer */
 #else
 extern uint32_t *InfoBuf;
 extern short *DataBuf;
 #endif
-extern uint16_t  DataOut;                   /* Data Out Index */
-extern uint16_t  DataIn;                    /* Data In Index */
-extern uint8_t   DataRun;                   /* Data Stream Run State */
+extern uint16_t  DataOut;               /* Data Out Index */
+extern uint16_t  DataIn;                /* Data In Index */
+extern uint8_t   DataRun;               /* Data Stream Run State */
