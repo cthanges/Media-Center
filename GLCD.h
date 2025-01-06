@@ -36,7 +36,7 @@
 #define Cyan            0x07FF      /*   0, 255, 255 */
 #define Red             0xF800      /* 255,   0,   0 */
 #define Magenta         0xF81F      /* 255,   0, 255 */
-#define Yellow          0xFFE0      /* 255, 255, 0   */
+#define Yellow          0xFFE0      /* 255, 255,   0 */
 #define White           0xFFFF      /* 255, 255, 255 */
 
 extern void GLCD_Init           (void);
@@ -45,12 +45,12 @@ extern void GLCD_PutPixel       (unsigned int x, unsigned int y);
 extern void GLCD_SetTextColor   (unsigned short color);
 extern void GLCD_SetBackColor   (unsigned short color);
 extern void GLCD_Clear          (unsigned short color);
-extern void GLCD_DrawChar       (unsigned int x,  unsigned int y, unsigned int cw, unsigned int ch, unsigned char *c);
+extern void GLCD_DrawChar       (unsigned int x, unsigned int y, unsigned int cw, unsigned int ch, unsigned char *c);
 extern void GLCD_DisplayChar    (unsigned int ln, unsigned int col, unsigned char fi, unsigned char  c);
 extern void GLCD_DisplayString  (unsigned int ln, unsigned int col, unsigned char fi, unsigned char *s);
 extern void GLCD_ClearLn        (unsigned int ln, unsigned char fi);
-extern void GLCD_Bargraph       (unsigned int x,  unsigned int y, unsigned int w, unsigned int h, unsigned int val);
-extern void GLCD_Bitmap         (unsigned int x,  unsigned int y, unsigned int w, unsigned int h, unsigned char *bitmap);
+extern void GLCD_Bargraph       (unsigned int x, unsigned int y, unsigned int w, unsigned int h, unsigned int val);
+extern void GLCD_Bitmap         (unsigned int x, unsigned int y, unsigned int w, unsigned int h, unsigned char *bitmap);
 extern void GLCD_ScrollVertical (unsigned int dy);
 
 extern void GLCD_WrCmd          (unsigned char cmd);
