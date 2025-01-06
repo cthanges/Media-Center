@@ -8,7 +8,7 @@
 #include "Game.h"
 
 #define __FI        1
-#define DELAY_2N		18
+#define DELAY_2N   18
 
 int mario_x = 180;
 int mario_y = 240;
@@ -17,14 +17,14 @@ int game_over=0, win = 0, blocknum = 1, once = 0;
 int paddle, i;
 int x1[] = {130, 70, 110, 150, 190, 230, 240, 60};					//array for the x-postion of the block
 int x2[] = {169, 109, 149, 189, 229, 269, 279, 99};					//array for the 2nd x-postion of the block
-int y1[] = {30, 90, 60, 110, 50, 150, 100 ,160};						//array for the y-postion of the block
-int y2[] = {69, 129, 99, 149, 89, 189, 139, 199};						//array for the 2nd y-postion of the block
+int y1[] = {30, 90, 60, 110, 50, 150, 100 ,160};					//array for the y-postion of the block
+int y2[] = {69, 129, 99, 149, 89, 189, 139, 199};					//array for the 2nd y-postion of the block
 
 extern unsigned char MARIO[];
 extern unsigned char BLOCKS[];
 extern unsigned char MARIOINTRO[];
 
-//This function creates a delay
+//Delay function
 void delay3 (int cnt) {
   cnt <<= DELAY_2N;
   while (cnt--);
@@ -133,7 +133,7 @@ while(1){
 		break;
 	}
 	
-  //If Mario reaches top of the screen	
+        //If Mario reaches top of the screen	
 	if (win == 1){
 		GLCD_Clear(Green); 
 		GLCD_SetBackColor(Green);
@@ -145,7 +145,7 @@ while(1){
 		Game();
 	}	
 	
-  //If Mario collides with block 
+        //If Mario collides with block 
 	else if (game_over == 1){
 		GLCD_Clear(Red); 
 		GLCD_SetBackColor(Red);
