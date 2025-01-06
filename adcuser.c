@@ -32,10 +32,10 @@ const uint16_t VolMax = 0x0100;     /* Volume Maximum Value */
 const uint16_t VolRes = 0x0004;     /* Volume Resolution */
 
 /*
- *  Audio Device Class Interface Get Request Callback
+ *   Audio Device Class Interface Get Request Callback
  *   Called automatically on ADC Interface Get Request
- *    Parameters:      None (global SetupPacket and EP0Buf)
- *    Return Value:    TRUE - Success, FALSE - Error
+ *   Parameters:      None (global SetupPacket and EP0Buf)
+ *   Return Value:    TRUE - Success, FALSE - Error
  */
 
 uint32_t ADC_IF_GetRequest (void) {
@@ -85,9 +85,9 @@ uint32_t ADC_IF_GetRequest (void) {
 
 /*
  *  Audio Device Class Interface Set Request Callback
- *   Called automatically on ADC Interface Set Request
- *    Parameters:      None (global SetupPacket and EP0Buf)
- *    Return Value:    TRUE - Success, FALSE - Error
+ *  Called automatically on ADC Interface Set Request
+ *  Parameters:      None (global SetupPacket and EP0Buf)
+ *  Return Value:    TRUE - Success, FALSE - Error
  */
 
 uint32_t ADC_IF_SetRequest (void) {
@@ -128,9 +128,9 @@ uint32_t ADC_IF_SetRequest (void) {
 
 /*
  *  Audio Device Class EndPoint Get Request Callback
- *   Called automatically on ADC EndPoint Get Request
- *    Parameters:      None (global SetupPacket and EP0Buf)
- *    Return Value:    TRUE - Success, FALSE - Error
+ *  Called automatically on ADC EndPoint Get Request
+ *  Parameters:      None (global SetupPacket and EP0Buf)
+ *  Return Value:    TRUE - Success, FALSE - Error
  */
 
 uint32_t ADC_EP_GetRequest (void) {
@@ -147,9 +147,9 @@ uint32_t ADC_EP_GetRequest (void) {
 
 /*
  *  Audio Device Class EndPoint Set Request Callback
- *   Called automatically on ADC EndPoint Set Request
- *    Parameters:      None (global SetupPacket and EP0Buf)
- *    Return Value:    TRUE - Success, FALSE - Error
+ *  Called automatically on ADC EndPoint Set Request
+ *  Parameters:      None (global SetupPacket and EP0Buf)
+ *  Return Value:    TRUE - Success, FALSE - Error
  */
 
 uint32_t ADC_EP_SetRequest (void) {
