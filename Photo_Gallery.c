@@ -8,7 +8,7 @@
 #include "Photo_Viewer.h"
 
 #define __FI        1
-#define DELAY_2N		18
+#define DELAY_2N    18
 int sel2=1;
 
 void delay2 (int cnt) {
