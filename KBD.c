@@ -16,7 +16,7 @@
 *						V2.0 - updated by Anita Tino for LPC1768
 *----------------------------------------------------------------------------*/
 
-#include <LPC17xx.H>							      /* LPC17xx definitions							 */
+#include <LPC17xx.H>							      /* LPC17xx definitions */
 #include "KBD.h"
 
 uint32_t KBD_val = 0;
@@ -26,7 +26,7 @@ Initialize Joystick
 *----------------------------------------------------------------------------*/
 void KBD_Init (void) {
 	
-	LPC_SC->PCONP			|= (1 << 15);					/* enable power to GPIO & IOCON		 */
+	LPC_SC->PCONP			|= (1 << 15);			      /* enable power to GPIO & IOCON */
 
 
 /* P1.20, P1.23..26 is GPIO (Joystick) */
@@ -52,8 +52,8 @@ Get Joystick value
 uint32_t get_button (void) {
 	uint32_t val = 0;
 	
-	val = KBD_get();													/* read Joystick state		*/
-	val = (~val & KBD_MASK);								/* key pressed is read as a non '0' value*/
+	val = KBD_get();						      /* read Joystick state */
+	val = (~val & KBD_MASK);					      /* key pressed is read as a non '0' value */
 	
 	return (val);
 }
