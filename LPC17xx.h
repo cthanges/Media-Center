@@ -146,7 +146,7 @@ typedef struct
   __IO uint32_t RSID;                       /*!< Offset: 0x180 (R/W)  Reset Source Identification Register */
        uint32_t RESERVED7[7];
   __IO uint32_t SCS;                        /*!< Offset: 0x1A0 (R/W)  System Controls and Status Register */
-  __IO uint32_t IRCTRIM;                /* Clock Dividers                     */
+  __IO uint32_t IRCTRIM;                    /* Clock Dividers                     */
   __IO uint32_t PCLKSEL0;                   /*!< Offset: 0x1A8 (R/W)  Peripheral Clock Select 0 Register */
   __IO uint32_t PCLKSEL1;                   /*!< Offset: 0x1AC (R/W)  Peripheral Clock Select 1 Register */
        uint32_t RESERVED8[4];
@@ -182,11 +182,11 @@ typedef struct
   __IO uint32_t PINMODE7;				 /* !< Offset: 0x05C PIN Mode7 (R/W) */
   __IO uint32_t PINMODE8;				 /* !< Offset: 0x060 PIN Mode8 (R/W) */
   __IO uint32_t PINMODE9;				 /* !< Offset: 0x064 PIN Mode9 (R/W) */
-  __IO uint32_t PINMODE_OD0;			 /* !< Offset: 0x068 Open Drain PIN Mode0 (R/W) */
-  __IO uint32_t PINMODE_OD1;			 /* !< Offset: 0x06C Open Drain PIN Mode1 (R/W) */
-  __IO uint32_t PINMODE_OD2;			 /* !< Offset: 0x070 Open Drain PIN Mode2 (R/W) */
-  __IO uint32_t PINMODE_OD3;			 /* !< Offset: 0x074 Open Drain PIN Mode3 (R/W) */
-  __IO uint32_t PINMODE_OD4;			 /* !< Offset: 0x078 Open Drain PIN Mode4 (R/W) */
+  __IO uint32_t PINMODE_OD0;			         /* !< Offset: 0x068 Open Drain PIN Mode0 (R/W) */
+  __IO uint32_t PINMODE_OD1;			         /* !< Offset: 0x06C Open Drain PIN Mode1 (R/W) */
+  __IO uint32_t PINMODE_OD2;			         /* !< Offset: 0x070 Open Drain PIN Mode2 (R/W) */
+  __IO uint32_t PINMODE_OD3;			         /* !< Offset: 0x074 Open Drain PIN Mode3 (R/W) */
+  __IO uint32_t PINMODE_OD4;			         /* !< Offset: 0x078 Open Drain PIN Mode4 (R/W) */
   __IO uint32_t I2CPADCFG;				 /* !< Offset: 0x07C I2C Pad Configure (R/W) */
 } LPC_PINCON_TypeDef;
 
@@ -632,7 +632,7 @@ typedef struct
 } LPC_CANAF_RAM_TypeDef;
 
 /** @brief  Controller Area Network Acceptance Filter(CANAF) register structure definition */
-typedef struct                          /* Acceptance Filter Registers        */
+typedef struct                              /* Acceptance Filter Registers        */
 {
   __IO uint32_t AFMR;                       /*!< Offset: 0x000 (R/W)  Acceptance Filter Register */
   __IO uint32_t SFF_sa;                     /*!< Offset: 0x004 (R/W)  Standard Frame Individual Start Address Register */
@@ -648,7 +648,7 @@ typedef struct                          /* Acceptance Filter Registers        */
 } LPC_CANAF_TypeDef;
 
 /** @brief  Controller Area Network Central (CANCR) register structure definition */
-typedef struct                          /* Central Registers                  */
+typedef struct                              /* Central Registers                  */
 {
   __I  uint32_t TxSR;                       /*!< Offset: 0x000 (R/ )  CAN Central Transmit Status Register */
   __I  uint32_t RxSR;                       /*!< Offset: 0x004 (R/ )  CAN Central Receive Status Register */
@@ -1008,8 +1008,5 @@ typedef struct
 #define LPC_GPDMACH7          ((LPC_GPDMACH_TypeDef   *) LPC_GPDMACH7_BASE )
 #define LPC_USB               ((LPC_USB_TypeDef       *) LPC_USB_BASE      )
 
-/**
- * @}
- */
 
 #endif  // __LPC17xx_H__
