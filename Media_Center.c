@@ -15,7 +15,7 @@
 #include "type.h"
 
 #define __FI        1
-#define DELAY_2N		18
+#define DELAY_2N    18
 
 int sel=1; 
 int music=0;
@@ -27,7 +27,7 @@ void delay (int cnt) {
 }
 
 void MP3_Player2 (void){
-		USB_Connect(TRUE);
+    USB_Connect(TRUE);
     NVIC_EnableIRQ(TIMER0_IRQn);
     NVIC_EnableIRQ(USB_IRQn);
 		
@@ -42,7 +42,7 @@ int main (void) {
 	
   LED_Init ();
   GLCD_Init();
-	KBD_Init();
+  KBD_Init();
   GLCD_Clear(Black);	
 	 
 	GLCD_SetBackColor(DarkCyan);		
