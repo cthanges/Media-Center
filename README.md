@@ -10,8 +10,26 @@ These features can all be located via the main menu. The media center's interfac
 
 ## Features
 ### 1. Start Screen
+- Instructs the user to push the joystick to enter the media center main menu
+    - Push: Enter the media center menu
+
+<p align="center">
+  <img src="Results/Start Screen.jpeg" width="350">
+</p>
 
 ### 2. Main Menu
+- Displays the three features of the media center
+    - Photo Gallery
+    - MP3 Player
+    - Game
+- Joystick navigation with highlighted selection
+    - Up/Down: Toggle through options
+    - Push: Select the highlighted option
+    - Left: Go back
+
+<p align="center">
+  <img src="Results/Main Menu.jpeg" width="350">
+</p>
 
 ### 3. Hip-Hop Photo Gallery
 - Displays 4 hip-hop album/mixtape covers (converting BMP files into C-source arrays)
