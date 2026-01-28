@@ -9,7 +9,11 @@ The purpose of this project is to create an interactive media center using the K
 These features can all be located via the main menu. The media center's interface is implemented on the LCD and users can navigate through the system using the MCB1700’s joystick. Creating this media center requires converting the BMP files into C-source arrays to display the images, implementing a USB-based MP3 player with volume control by using the board’s potentiometer, and creating a game environment that uses the LCD and joystick.
 
 ## Features
-### 1. Photo Gallery
+### 1. Start Screen
+
+### 2. Main Menu
+
+### 3. Hip-Hop Photo Gallery
 - Displays 4 hip-hop album/mixtape covers (converting BMP files into C-source arrays)
     - Photo #1: good kid, m.A.A.d city
     - Photo #2: 1999
@@ -40,7 +44,7 @@ These features can all be located via the main menu. The media center's interfac
   <img src="Results/Photo 4.jpeg" width="350">
 </p>
 
-### 2. MP3 Player
+### 4. Spotify-themed MP3 Player
 - Streams PC audio over USB to the board
 - Disconnects audio when exiting
 - Potentiometer volume control
@@ -50,6 +54,9 @@ These features can all be located via the main menu. The media center's interfac
 <p align="center">
   <img src="Results/MP3 Player.jpeg" width="350">
 </p>
+
+### 5. Custom Mario Kart Game
+<!--- Add stuff-->
 
 <!--
 ## Tools
