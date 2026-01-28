@@ -10,8 +10,8 @@ These features can all be located via the main menu. The media center's interfac
 
 ## Features
 ### 1. Start Screen
-- Instructs the user to push the joystick to enter the media center main menu
-    - Push: Enter the media center menu
+- Instructs the user to push the joystick to proceed to the main menu
+    - Push: Proceed to the main menu
 
 <p align="center">
   <img src="Results/Start Screen.jpeg" width="350">
