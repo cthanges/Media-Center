@@ -75,12 +75,12 @@ These features can all be located via the main menu. The media center's interfac
 
 ### 5. Custom Mario Kart Game
 - Joystick navigation to proceed through levels and sections of the game
-- Adds another obstacle to the game and lights up another LED on the board given the level (since the MCB1700 has 8 LEDs, there are only 8 levels)
     - Push: Proceed through start screen, instructions, 'Level Up', and 'Game Over' screens
     - Left:
         - Start screen: Go back to main menu
         - Game: Move left
     - Right: Move right
+- Adds another obstacle to the game and lights up another LED on the board given the level (since the MCB1700 has 8 LEDs, there are only 8 levels)
 
 <p align="center">
   <img src="Results/Game Intro.jpeg" width="350">
