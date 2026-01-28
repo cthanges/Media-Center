@@ -40,9 +40,17 @@ These features can all be located via the main menu. The media center's interfac
   <img src="Results/Photo 4.jpeg" width="350">
 </p>
 
-<!--
 ### 2. MP3 Player
-- 
+- Streams PC audio over USB to the board
+- Disconnects audio when exiting
+- Potentiometer volume control
+    - Clockwise: Raise volume
+    - Counter-clockwise: Lower volume
 
+<p align="center">
+  <img src="Results/MP3 Player.jpeg" width="350">
+</p>
+
+<!--
 ## Tools
 - GIMP-->
