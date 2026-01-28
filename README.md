@@ -2,7 +2,7 @@
 
 ## Summary
 The purpose of this project is to create an interactive media center using the Keil MCB1700 Evaluation Board (ARM Cortex-M3) and the µVision software. This media center features:
-1. A photo gallery that displays 4 of my favourite hip-hop albums
+1. A photo gallery that displays 4 of my favourite hip-hop albums/mixtapes
 2. A Spotify-themed MP3 player that streams audio from the PC via USB
 3. A fan-made Mario Kart game
 
@@ -10,7 +10,7 @@ These features can all be located via the main menu. The media center's interfac
 
 ## Features
 ### 1. Photo Gallery
-- Displays 4 hip-hop album covers (converting BMP files into C-source arrays)
+- Displays 4 hip-hop album/mixtape covers (converting BMP files into C-source arrays)
     - Photo #1: good kid, m.A.A.d city
     - Photo #2: 1999
     - Photo #3: Madvillainy 
