@@ -25,7 +25,7 @@ These features can all be located via the main menu. The media center's interfac
 - Joystick navigation with highlighted selection
     - Up/Down: Toggle through options
     - Push: Select the highlighted option
-    - Left: Go back
+    - Left: Go back to start screen
 
 <p align="center">
   <img src="Results/Main Menu.jpeg" width="350">
@@ -74,6 +74,34 @@ These features can all be located via the main menu. The media center's interfac
 </p>
 
 ### 5. Custom Mario Kart Game
+- Joystick navigation to proceed through levels and sections of the game
+- Adds another obstacle to the game and lights up another LED on the board given the level (since the MCB1700 has 8 LEDs, there are only 8 levels)
+    - Push: Proceed through start screen, instructions, 'Level Up', and 'Game Over' screens
+    - Left:
+        - Start screen: Go back to main menu
+        - Game: Move left
+    - Right: Move right
+
+<p align="center">
+  <img src="Results/Game Intro.jpeg" width="350">
+</p>
+
+<p align="center">
+  <img src="Results/Game Instructions.jpeg" width="350">
+</p>
+
+<p align="center">
+  <img src="Results/Gameplay.jpeg" width="350">
+</p>
+
+<p align="center">
+  <img src="Results/Level Up.jpeg" width="350">
+</p>
+
+<p align="center">
+  <img src="Results/Game Over.jpeg" width="350">
+</p>
+
 <!--- Add stuff-->
 
 <!--
