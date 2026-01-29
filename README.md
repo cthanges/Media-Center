@@ -1,5 +1,4 @@
 # Media Center
-
 ## Summary
 The purpose of this project is to create an interactive media center using the Keil MCB1700 Evaluation Board (ARM Cortex-M3) and the µVision software. This media center features:
 1. A photo gallery that displays 4 of my favourite hip-hop albums/mixtapes
